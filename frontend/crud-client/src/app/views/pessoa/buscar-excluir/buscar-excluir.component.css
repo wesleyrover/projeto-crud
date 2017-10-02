@@ -1,0 +1,72 @@
+.anotacao-periodo {
+    margin-top: 25px;
+    position: relative;
+}
+
+.anotacao-periodo-label {
+    position: absolute;
+    top: 8px;
+    left: -24px;
+    font-size: 11px;
+}
+
+.botoes {
+    background: #fff;
+    border: 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+.box {
+    border-bottom: 0;
+}
+
+.agendamentos {
+    margin-top: 30px;
+}
+
+.headerData{
+    width: 30% !important;
+}
+
+.headerUnid{
+     width: 33% !important;
+}
+
+.headerAutor{
+    width: 35% !important;
+}
+
+.headerPerfil{
+     width: 20% !important;
+}
+
+.headerStatus{
+    width: 10% !important;
+}
+
+.headerAcao{
+    width: 20% !important;
+}
+
+.tdDataAutor{
+    vertical-align: middle;
+}
+
+.tdNomeUsuario{
+    vertical-align: middle;
+    max-width: 33%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.tableRowTransparent{
+    background-color: transparent;
+}
+
+.vermelho{color: red;}
+.verde{color: darkgreen;}
+
+.growl-container > .growl-item { pointer-events: none }

@@ -1,0 +1,34 @@
+<!-- CONTEUDO -->
+<div class="content-wrap">
+	<div class="content">
+		<!-- Centralizar -->
+		<div class="centralizar box">
+			<fieldset class="form-group">
+				<legend> {{titlePage}}</legend>
+				<div class="row">
+					<span class="col-md-4 form-group">
+						<label>Nome:</label>						
+						<input type="text" hi class="form-control mr-sm-2" maxlength="100" [(ngModel)]="pessoa.nome"  name="txtnome" />
+					</span>
+					<span class="col-md-2 form-group">
+						<label>Cpf:</label>						
+						<input type="text" class="form-control mr-sm-2 cpf" [(ngModel)]="pessoa.cpf" maxlength="14" name="txtcpf" />
+					</span>
+				</div>
+				<div class="row">
+					<span class="col-md-1 form-group">
+						<label>Idade:</label>						
+						<input type="text" hi class="form-control mr-sm-2" maxlength="3" [(ngModel)]="pessoa.idade" name="txtidade" />
+					</span>
+				</div>
+				<!-- Botoes -->
+				<div class="botoes text-right">
+					<!--<a class="btn btn-tj" (click)="save()"><span class="fa fa-floppy-o"></span> Salvar</a>-->
+					<a class="btn btn-primary btn-success" (click)="salvar()" data-placement="top" title="Salvar Usuário"><span class="fa fa-floppy-o"></span> Salvar</a>
+					<a class="btn btn-primary btn-danger" (click)="cancelar()" data-placement="top" title="Voltar para Tela de Pesquisa"><span class="fa fa-ban"></span> Cancelar</a>
+				</div>
+				<!-- /Botoes -->
+			</fieldset>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,63 @@
+.table tr.active td {
+  background-color:#123456 !important;
+  color: white;
+}
+
+.modal-dialog {
+    width: 850px !important;
+    margin:30px auto;
+}
+
+.anotacao-periodo {
+    margin-top: 25px;
+    position: relative;
+}
+
+.anotacao-periodo-label {
+    position: absolute;
+    top: 8px;
+    left: -24px;
+    font-size: 11px;
+}
+
+.vermelho{color: red;}
+.verde{color: darkgreen;}
+
+.botoes {
+    background: #fff;
+    border: 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+.box {
+    border-bottom: 0;
+}
+
+.agendamentos {
+    margin-top: 30px;
+}
+
+.headerData{
+    width: 30% !important;
+}
+
+.headerUnid{
+     width: 35% !important;
+}
+
+.headerAutor{
+    width: 35% !important;
+}
+
+.headerPerfil{
+     width: 20% !important;
+}
+
+.tdDataAutor{
+    vertical-align: middle;
+}
+
+.growl-container > .growl-item { pointer-events: none }

@@ -1,0 +1,64 @@
+<!-- CONTEUDO -->
+<div class="content-wrap">
+
+	<div class="content">
+		<!-- Centralizar -->
+		<div class="centralizar box">
+			<!--<p-growl [(value)]="msgs"  life="5000"></p-growl>-->
+			<fieldset class="form-group">
+				<legend>Pesquisar Pessoa</legend>
+				<div class="row">
+					<span class="col-md-4 form-group">
+						<label>Nome:</label>						
+						<input type="text" hi class="form-control mr-sm-2" maxlength="100"  [(ngModel)]="pessoa.nome"  name="txtnome" />
+					</span>
+					<span class="col-md-2 form-group">
+						<label>Cpf:</label>						
+						<input type="text" hi class="form-control mr-sm-2" maxlength="11"   name="numeroProcessoRestaurativo1" />
+					</span>
+				</div>
+				<div class="row">
+					<span class="col-md-1 form-group">
+						<label>Idade:</label>						
+						<input type="text" hi class="form-control mr-sm-2" maxlength="3"   name="numeroProcessoRestaurativo2" />
+					</span>
+				</div>
+				<!-- Botoes -->
+				<div class="botoes text-right">
+					<a class="btn btn-primary btn-primary" (click)="filtrar()"><span class="glyphicon glyphicon-filter"></span>Filtrar</a>
+					<a class="btn btn-primary btn-success" (click)="novoUsuario()"><span class="glyphicon glyphicon-user"></span>Novo</a>
+				</div>
+				<!-- /Botoes -->
+			</fieldset>
+			<fieldset class="form-group" style="margin-bottom: 50px">
+				<div class="row">
+					<span class="col-md-12 form-group">
+					<table class="table table-hover table-striped sem-margin" style="table-layout: fixed">
+						<thead>
+							<tr>
+								<th class = "headerUnid" >Código</th>
+								<th class = "headerAutor">Nome</th>
+								<th class = "headerStatus">Idade</th>
+								<th class = "headerStatus">CPF</th>
+								<th class="text-right headerAcao">Ação</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr *ngFor="let pessoaValor of listaPessoa"  >
+								<td class = "tdDataAutor" title="{{pessoaValor.id}}">{{pessoaValor.id}}</td>
+								<td class = "tdDataAutor" title="{{pessoaValor.nome}}">{{pessoaValor.nome}}</td>
+								<td class = "tdDataAutor" title="{{pessoaValor.idade}}">{{pessoaValor.idade}}</td>
+								<td class = "tdDataAutor" >{{pessoaValor.cpf}}</td>
+								<td class="text-right tdDataAutor" >									
+									<a class="btn btn-default btn-xs" title="Editar Usuário: {{pessoaValor.nome}}" (click)="editarPessoa(pessoaValor.id)"><span class="fa fa-pencil">Editar</span></a>
+									<a class="btn btn-default btn-xs" title="Excluir Usuário: {{pessoaValor.nome}}" (click)="deletarPessoa(pessoaValor.id)"><span class="fa fa-trash">Excluir</span></a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					</span>
+				</div>
+			</fieldset>
+		</div>
+	</div>
+</div>
