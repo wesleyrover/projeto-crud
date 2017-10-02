@@ -20,7 +20,7 @@ export class BaseComponent implements OnInit {
   api: string;
 
   constructor(
-    public router: Router, public http: Http, public toastrService: ToastrService) {
+    public router: Router, public http: Http) {
   }
 
   ngOnInit() {
@@ -49,13 +49,13 @@ export class BaseComponent implements OnInit {
   showMsgAll(severit: string, titulo, msg: Response | any) {
     let valorMsg: string;
     valorMsg = msg.message ? msg.message : msg.toString();
-    this.toastrService.info(valorMsg);
+  //  this.toastrService.info(valorMsg);
   }
 
   showErro(error: Response | any) {
     let errMsg: string;
     errMsg = error.message ? error.message : error.toString();
-    this.toastrService.error(errMsg);
+  //  this.toastrService.error(errMsg);
   }
 
   hide() {

@@ -40,8 +40,8 @@ export class NovoEditarPessoaComponent extends BaseComponent {
 
   constructor(public router: Router, public http: Http,
     public route: ActivatedRoute,
-    private pessoaService: PessoaService, public toastrService: ToastrService) {
-    super(router, http, toastrService);
+    private pessoaService: PessoaService) {
+    super(router, http);
 
     route.params.subscribe(params => {
       if (params['pessoa'] != null) {
@@ -103,7 +103,7 @@ export class NovoEditarPessoaComponent extends BaseComponent {
   }
 
   showSucessoSalvar() {
-  this.toastrService.success('Pessoa Salvo Com Sucesso');
+//  this.toastrService.success('Pessoa Salvo Com Sucesso');
   }
 
   cancelar() {

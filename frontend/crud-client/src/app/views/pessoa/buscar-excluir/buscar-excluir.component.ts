@@ -29,8 +29,8 @@ export class BuscarExcluirPessoaComponent extends BaseComponent {
 
   constructor(public router: Router, public http: Http,
     private route: ActivatedRoute,
-    private pessoaServive: PessoaService, public toastrService: ToastrService ) {
-    super(router, http, toastrService);
+    private pessoaServive: PessoaService) {
+    super(router, http);
   }
 
   ngOnInit() {
